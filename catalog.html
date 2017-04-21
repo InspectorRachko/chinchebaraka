@@ -1,268 +1,159 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Nerds</title>
-  </head>
-
-  <body>
-    <form action="https://echo.htmlacademy.ru" method="post">
-    <header class="Main-header">
-
-      <div class="container">
-        <div class="index-logo">
-          <img src="#" width="#" height="#" alt="Nerds">
-        </div>
-
-        <nav class="Main-navigation">
-          <ul>
-            <li>
-              <a href="#">Студия<a>
-              </li>
-
-              <li>
-                <a href="#">Клиенты<a>
-                </li>
-
-                <li>
-                  <a href="#">Магазин<a>
-                  </li>
-
-                  <li>
-                    <a href="#">Контакты<a>
-                    </li>
-                  </ul>
-      </nav>
-
-      <div class="user-block">
-        <a class="basket" href="#">Корзина</a>
-      </div>
-
+<head>
+<meta charset="utf-8">
+<title>Nerds</title>
+</head>
+<body>
       <h1 class="welcome">
         Добро пожаловать в магазин готовых макетов
       </h1>
-      </div>
-    </header>
-
-  <main class="container">
-
-    <div class="left-menu">
-      <h3>Стоимость:</h3><br>
+ <header class="Main-header">
+    <div class="container">
+        <div class="index-logo">
+        <a><img src="#" width="#" height="#" alt="Nerds"></a>
+        </div>
+      <nav class="Main-navigation">
+          <ul>
+             <li>
+               <a href="#">Студия</a>
+             </li>
+             <li>
+               <a href="#">Клиенты</a>
+             </li>
+              <li>
+                <a>Магазин</a>
+              </li>
+              <li>
+                 <a href="#">Контакты</a>
+              </li>
+          </ul>
+      </nav>
+          <div class="user-block">
+            <a class="basket" href="#">Корзина</a>
+          </div>
+    </div>
+ </header>
+ <main class="container">
+  <div class="left-menu">
+   <form action="https://echo.htmlacademy.ru" method="post">
+         <h3>Стоимость:</h3><br>
       <div class="rangeinput">
         <input class="bar" type="range">
-    <span class="highlight"></span><br>
+        <span class="highlight"></span><br>
       </div>
-
       <div class="from-before">
           <label> от<Input type="text" name="from">
-               до<Input type="text" name="before"></label><br>
+          до<Input type="text" name="before"></label><br>
       </div>
-
-    <div class="grid">
-      <h3>Сетка:</h3><br>
-      <ul>
-
-        <li>
-
-        <label>
-              <input type="radio" value="Адаптивная" name="question-one">
-               Адаптивная
-           </label>
-         </li>
-         <li>
-
-         <label>
-               <input type="radio" value="Фиксированная" name="question-two">
-                Фиксированная
-            </label>
-          </li>
-
-          <li>
-          <label>
-                <input type="radio" value="Резиновая" name="question-three">
-                 Резиновая
-             </label>
-           </li>
-
-         </ul><br>
+    <div class="radio-selector">
+          <h3>Сетка:</h3><br>
+      <div>
+              <input type="radio" value="Адаптивная" name="questions" id="radio1-1">
+              Адаптивная
+            <label for="radio1-1"></label>
+      </div>
+      <div>
+              <input type="radio" value="Фиксированная" name="questions" id="radio1-2">
+              Фиксированная
+            <label for="radio1-2"></label>
+      </div>
+      <div>
+             <input type="radio" value="Резиновая" name="questions" id="radio1-3">
+              Резиновая
+            <label for="radio1-3"></label>
+      </div>
+    </div><br>
+     <div class="Checkbox-selector">
+        <h3>Особенности:</h3><br>
+        <div>
+            <input type="radio" value="Слайдер" name="features" id="radio2-1">
+             Слайдер
+          <label for="radio2-1"></label>
+        </div>
+        <div>
+            <input type="radio" value="Блок преимуществ" name="features" id="radio2-2">
+            Блок преимуществ
+          <label for="radio2-2"></label>
+        </div>
+        <div>
+             <input type="radio" value="Новости" name="features" id="radio2-3">
+              Новости
+          <label for="radio2-3"></label>
+        </div>
+        <div>
+            <input type="radio" value="Галерея" name="features" id="radio2-4">
+            Галерея
+          <label for="radio2-4"></label>
+        </div>
+        <div>
+           <input type="radio" value="Корзина" name="features" id="radio2-5">
+            Корзина
+          <label for="radio2-5"></label>
+        </div>
+     </div><br>
     </div>
-
-    <div class="features">
-      <h3>Особенности:</h3><br>
-      <ul>
-
-        <li>
-        <label>
-              <input type="radio" value="Слайдер" name="feature-one">
-               Слайдер
-           </label>
-         </li>
-
-         <li>
-         <label>
-               <input type="radio" value="Блок преимуществ" name="feature-two">
-                Блок преимуществ
-            </label>
-          </li>
-
-          <li>
-          <label>
-                <input type="radio" value="Новости" name="feature-three">
-                 Новости
-             </label>
-           </li>
-
-           <li>
-           <label>
-                 <input type="radio" value="Галерея" name="feature-four">
-                  Галерея
-              </label>
-            </li>
-
-            <li>
-            <label>
-                  <input type="radio" value="Корзина" name="feature-five">
-                   Корзина
-               </label>
-             </li>
-
-           </ul><br>
-    </div>
-
     <div class="btn-show">
-      <input type="submit" value="Показать">
-
+        <input type="submit" value="Показать">
     </div>
+   </form>
   </div>
-
-    <div class="right-menu">
-
-      <div class="sorting">
+  <div class="right-menu">
         <p>Сортировать:</p>
-        <ul>
-
-          <li>
-            <input type="submit" value="по цене">
-          </li>
-
-          <li>
-            <input type="submit" value="по типу">
-          </li>
-
-          <li>
-            <input type="submit" value="по функционалу">
-          </li>
-
-          </ul>
-      </div>
-
-      <div class="gallery">
-
-        <div class='sliderA'>
-    <input type="radio" name="slider1" id="slider1-1" checked="checked">
-    <label for="slider1_1"></label>
-
-    <input type="radio" name="slider1" id="slider1-2">
-    <label for="slider1_2"></label>
-
-    <input type="radio" name="slider1" id="slider1-3">
-    <label for="slider1_3"></label>
-
-</div>
-<div class='sliderB'>
-<input type="radio" name="slider2" id="slider2-1" checked="checked">
-<label for="slider1_1"></label>
-
-<input type="radio" name="slider2" id="slider2-2">
-<label for="slider1_2"></label>
-
-<input type="radio" name="slider2" id="slider2-3">
-<label for="slider1_3"></label>
-
-</div>
-<div class='sliderC'>
-<input type="radio" name="slider3" id="slider3-1" checked="checked">
-<label for="slider1_1"></label>
-
-<input type="radio" name="slider3" id="slider3-2">
-<label for="slider1_2"></label>
-
-<input type="radio" name="slider3" id="slider3-3">
-<label for="slider1_3"></label>
-
-</div>
-<div class='sliderD'>
-<input type="radio" name="slider4" id="slider4-1" checked="checked">
-<label for="slider1_1"></label>
-
-<input type="radio" name="slider4" id="slider4-2">
-<label for="slider1_2"></label>
-
-<input type="radio" name="slider4" id="slider4-3">
-<label for="slider1_3"></label>
-
-</div>
-<div class='sliderE'>
-<input type="radio" name="slider5" id="slider5-1" checked="checked">
-<label for="slider1_1"></label>
-
-<input type="radio" name="slider5" id="slider5-2">
-<label for="slider1_2"></label>
-<div></div>
-
-<input type="radio" name="slider5" id="slider5-3">
-<label for="slider1_3"></label>
-
-</div>
-<div class='sliderf'>
-<input type="radio" name="slider6" id="slider6-1" checked="checked">
-<label for="slider1_1"></label>
-
-<input type="radio" name="slider6" id="slider6-2">
-<label for="slider1_2"></label>
-
-<input type="radio" name="slider6" id="slider6-3">
-<label for="slider1_3"></label>
-
-</div>
-      </div>
-    <div class="bottom-btm">
-
-    <a class="btn" href="#">1</a>
-
-    <a class="btn" href="#">2</a>
-
-    <a class="btn" href="#">3</a>
-
-    <a class="btn" href="#">Следующая</a>
-
+    <div class="sorting">
+        <div>
+            <a href="#">по цене</a>
+        </div>
+        <div>
+            <a href="#">по типу</a>
+        </div>
+        <div>
+            <a href="#">по функционалу</a>
+        </div>
     </div>
-
+    </div>
+    <div class="gallery">
+        <div class='slider-A'>
+          <img src="#" width="#" height="#" alt="slider-a">
+        </div>
+        <div class='slider-B'>
+          <img src="#" width="#" height="#" alt="slider-b">
+        </div>
+        <div class='slider-C'>
+          <img src="#" width="#" height="#" alt="slider-c">
+        </div>
+        <div class='slider-D'>
+          <img src="#" width="#" height="#" alt="slider-d">
+        </div>
+        <div class='slider-E'>
+          <img src="#" width="#" height="#" alt="slider-e">
+        </div>
+        <div class='slider-f'>
+          <img src="#" width="#" height="#" alt="slider-f">
+        </div>
+    </div>
+    <div class="pagination">
+        <a class="btn" href="#">1</a>
+        <a class="btn" href="#">2</a>
+        <a class="btn" href="#">3</a>
+        <a class="btn" href="#">Следующая</a>
+    </div>
     <div class="MAP">
     </div>
-
   </div>
 </main>
-
 <footer class="main-footer">
   <div class="container">
-
     <div class="social-btn">
       <a class="social-btn social-btn-vk" href="#">Vk</a>
-
       <a class="social-btn social-btn-facebook" href="#">Facebook</a>
-
       <a class="social-btn social-btn-instagram" href="#">instagram</a>
-        </div>
-
-  <div class="last-title">
-    <h2>Давайте дружить,это выгодно!</h2>
-
+    </div>
+    <div class="last-title">
+      <h2>Давайте дружить,это выгодно!</h2>
       <p>Скидка 10% для друзей из социальных сетей.</p>
-  </div>
-
-</div>
+    </div>
+    </div>
 </footer>
-  </body>
-</form>
+</body>
 </html>
